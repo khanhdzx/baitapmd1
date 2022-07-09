@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>nhap 2 canh hinh chu nhat de tinh dien tich</h1>
+<h2 id="vip4"></h2>
+<input id="vip" type="text">
+<input id="vip2" type="text">
+<button onclick="dienTichHinhChuNhat()">kiem tra</button>
+<script>
+    function dienTichHinhChuNhat() {
+        let x = +document.getElementById('vip').value;
+        let y = +document.getElementById('vip2').value;
+        console.log(x)
+        console.log(y)
+
+        let s = x * y
+        document.getElementById('vip4').innerHTML = 'dien tich hinh chu nhat la' + s;
+    }
+</script>
+</body>
+</html>

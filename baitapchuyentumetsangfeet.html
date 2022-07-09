@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Nhập Số Mét</h2>
+<input id="vip1"type="text">
+<button id="vip2" onclick="chuyen()">Chuyển</button>
+<script>
+    function chuyen(){
+        let m = document.getElementById('vip1').value;
+        let ft = m * 3.2808;
+        document.getElementById('vip2').innerText =ft +' '+ 'feet';
+    }
+</script>
+</body>
+</html>

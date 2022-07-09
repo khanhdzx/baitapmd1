@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>nhap canh hinh vuong de tinh dien tich</h2>
+<h5 id="dientich"></h5>
+<input  id="radius" type="text">
+<button onclick="dienTichHinhVuong()">hinh vuong</button>
+<script>
+    function dienTichHinhVuong(){
+        let a = +document.getElementById('radius').value;
+        let s = a*a
+        document.getElementById('dientich').innerHTML='Dien Tich'+s ;
+
+    }
+</script>
+</body>
+</html>

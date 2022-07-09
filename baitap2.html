@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="vip1" type="text">
+<button onclick="kiemTra()">Kiểm Tra</button>
+<p id="vip3"> ket qua</p>
+<script>
+    function kiemTra() {
+        let y = +document.getElementById('vip1').value;
+        console.log()
+        if (y % 3 == 0 && y % 5 == 0) {
+            document.getElementById('vip3').innerText = y + 'là số chia hết cho 3 và 5'
+        } else if (y % 3== 0) {
+            document.getElementById('vip3').innerText = y + 'là số chia hết cho 3'
+        } else if (y % 5 ==0) {
+            document.getElementById('vip3').innerText = y + 'là số chia hết cho 5'
+        } else {
+            document.getElementById('vip3').innerText = y + 'là số không chia hết cho 3 và 5'
+
+        }
+    }
+</script>
+</body>
+</html>
